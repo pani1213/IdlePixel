@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 0e3cb7d48862fcc4e96b6a8285df7640
+  m_SerializeEntries:
+  - m_GUID: bbe971ba3d65fde44948acb88ea0f8c3
+    m_Address: Assets/02.Prefabs/UI/Popup_GachaShop.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PopupUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cacfbe68c00ed9343a0df6e6335aacd7
+    m_Address: Assets/02.Prefabs/UI/Popup_GachaItemList.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PopupUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1eaaa1d84819434d9a669068338883d
+    m_Address: Assets/02.Prefabs/UI/Popup_PlayerUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PopupUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ab2a39574e19ca438f65fdbd49700df
+    m_Address: Assets/02.Prefabs/UI/Popup_PetUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PopupUI
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 41bbb606cf0bcf742ab88a2fa6382f71
+    m_Address: Assets/02.Prefabs/UI/Popup_EquipUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ebf85714a7208e4e8e999688803e2d5
+    m_Address: Assets/02.Prefabs/UI/Popup_PetStateUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 013ba851cd66bd748b0bf16a2a96815f
+    m_Address: Assets/02.Prefabs/UI/Popup_SkillStateUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 80a180661c08c0d44b300434a643f809
+    m_Address: Assets/02.Prefabs/UI/Popup_DungeonUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 691da98cac937ab40a2cd160a48fafa9
+    m_Address: Assets/02.Prefabs/UI/Popup_DungeonStageUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9996280d03bbe64582facf3cd9d7b6c
+    m_Address: Assets/01.Prefabs/UI/PopupADBlessing.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d9aa46b1986cd674a84eceafb44db1b8, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b827ac539faf98c4fb829898fdfee0ae, type: 2}
+    - {fileID: 11400000, guid: 98acb0eb0901cbd4c8c9307cb993afc7, type: 2}

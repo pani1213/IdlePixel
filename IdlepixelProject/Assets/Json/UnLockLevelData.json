@@ -1,0 +1,28 @@
+{
+  "UnLockLevelData": [
+    {
+      "id": 1001,
+      "unlockType": 0,
+      "unlockLevel": 200,
+      "descript": "공격속도 Lv{0} 달성시 잠금 해제"
+    },
+    {
+      "id": 1002,
+      "unlockType": 1,
+      "unlockLevel": 1001,
+      "descript": "더블샷 Lv{0} 달성시 잠금 해제"
+    },
+    {
+      "id": 1003,
+      "unlockType": 2,
+      "unlockLevel": 350,
+      "descript": "트리플샷 Lv{0} 달성시 잠금 해제"
+    },
+    {
+      "id": 1004,
+      "unlockType": 3,
+      "unlockLevel": 150,
+      "descript": "상급 공격력 Lv{0} 달성시 잠금 해제"
+    }
+  ]
+}

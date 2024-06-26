@@ -1,0 +1,54 @@
+{
+  "LevelupUIData": [
+    {
+      "id": 1001,
+      "name": "공격력",
+      "ImageFileName": "Up_Attack_Image"
+    },
+    {
+      "id": 1002,
+      "name": "체력",
+      "ImageFileName": "UP_hp_Image"
+    },
+    {
+      "id": 1003,
+      "name": "체력회복",
+      "ImageFileName": "UP_hp_Regen_Image"
+    },
+    {
+      "id": 1004,
+      "name": "공격속도",
+      "ImageFileName": "UP_AttackSpeed_Image"
+    },
+    {
+      "id": 1005,
+      "name": "치명타",
+      "ImageFileName": "UP_Critical_Percent_Image"
+    },
+    {
+      "id": 1006,
+      "name": "치명타 피해",
+      "ImageFileName": "UP_Critical_Power_Image"
+    },
+    {
+      "id": 1007,
+      "name": "더블샷",
+      "ImageFileName": "UP_DoubleShot_Image"
+    },
+    {
+      "id": 1008,
+      "name": "트리플샷",
+      "ImageFileName": "UP_TripleShot_Image"
+    },
+    {
+      "id": 1009,
+      "name": "상급공격력",
+      "ImageFileName": "UP_HighClassAttackPower_Image"
+    },
+    {
+      "id": 1010,
+      "name": "일반 적 피해",
+      "ImageFileName": "UP_NomalEnemyDamagePower_Image"
+    }
+  ]
+}

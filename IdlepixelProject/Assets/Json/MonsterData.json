@@ -1,0 +1,94 @@
+{
+  "MonsterData": [
+    {
+      "id": 1001,
+      "hp": 100,
+      "atk": 10,
+      "rewardId": 1001,
+      "rewardCount": 10,
+      "speed": 5,
+      "monsterPrefabName": "Beholder"
+    },
+    {
+      "id": 2001,
+      "hp": 1000,
+      "atk": 30,
+      "rewardId": 1001,
+      "rewardCount": 300,
+      "speed": 5,
+      "monsterPrefabName": "RedOgre"
+    },
+    {
+      "id": 1002,
+      "hp": 200,
+      "atk": 20,
+      "rewardId": 1001,
+      "rewardCount": 20,
+      "speed": 5,
+      "monsterPrefabName": "Beholder"
+    },
+    {
+      "id": 2002,
+      "hp": 2000,
+      "atk": 30,
+      "rewardId": 1001,
+      "rewardCount": 600,
+      "speed": 5,
+      "monsterPrefabName": "RedOgre"
+    },
+    {
+      "id": 1003,
+      "hp": 300,
+      "atk": 10,
+      "rewardId": 1001,
+      "rewardCount": 10,
+      "speed": 5,
+      "monsterPrefabName": "Beholder"
+    },
+    {
+      "id": 2003,
+      "hp": 3000,
+      "atk": 30,
+      "rewardId": 1001,
+      "rewardCount": 600,
+      "speed": 5,
+      "monsterPrefabName": "RedOgre"
+    },
+    {
+      "id": 1004,
+      "hp": 400,
+      "atk": 20,
+      "rewardId": 1001,
+      "rewardCount": 20,
+      "speed": 5,
+      "monsterPrefabName": "Beholder"
+    },
+    {
+      "id": 2004,
+      "hp": 4000,
+      "atk": 30,
+      "rewardId": 1001,
+      "rewardCount": 600,
+      "speed": 5,
+      "monsterPrefabName": "RedOgre"
+    },
+    {
+      "id": 1005,
+      "hp": 500,
+      "atk": 10,
+      "rewardId": 1001,
+      "rewardCount": 10,
+      "speed": 5,
+      "monsterPrefabName": "Beholder"
+    },
+    {
+      "id": 2005,
+      "hp": 5000,
+      "atk": 30,
+      "rewardId": 1001,
+      "rewardCount": 600,
+      "speed": 5,
+      "monsterPrefabName": "RedOgre"
+    }
+  ]
+}

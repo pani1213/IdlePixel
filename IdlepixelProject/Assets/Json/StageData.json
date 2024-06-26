@@ -1,0 +1,634 @@
+{
+  "StageData": [
+    {
+      "id": 1001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 1002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        3,
+        3,
+        3,
+        3,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 1003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        7,
+        7,
+        7,
+        7,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 1004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        1,
+        2,
+        3,
+        4,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 1005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 2001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 2002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 2003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 2004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 2005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 3001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 3002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 3003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 3004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 3005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 4001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 4002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 4003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 4004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 4005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 5001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 5002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 5003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 5004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 5005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 6001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 6002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 6003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 6004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 6005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 7001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 7002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 7003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 7004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 7005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 8001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 8002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 8003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 8004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 8005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 9001,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 9002,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 9003,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 9004,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    },
+    {
+      "id": 9005,
+      "monsterId": 1001,
+      "bossId": 2001,
+      "monsterSpawnCount": [
+        5,
+        5,
+        5,
+        5,
+        1
+      ],
+      "backgroundSpriteName": null,
+      "soundName": null
+    }
+  ]
+}
