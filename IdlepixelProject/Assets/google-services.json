@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "314094620674",
+    "firebase_url": "https://idelpixel-default-rtdb.firebaseio.com",
+    "project_id": "idelpixel",
+    "storage_bucket": "idelpixel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314094620674:android:3481da2cb528a924c0d71b",
+        "android_client_info": {
+          "package_name": "com.paniCompany.com.pani.idlepixel"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXRu6YnsC93OcssciwlCG-jdxUy9sebqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
