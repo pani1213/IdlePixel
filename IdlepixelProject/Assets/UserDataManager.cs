@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Firebase.Database;
 using Firebase.Extensions;
+using Firebase;
 
 public class UserDataManager : Singleton<UserDataManager>
 {
@@ -10,7 +11,6 @@ public class UserDataManager : Singleton<UserDataManager>
     public string userID;
     private int coinID = 1001, JemID = 1002;
     DatabaseReference reference;
-
 
     public void init()
     {
@@ -55,7 +55,6 @@ public class UserDataManager : Singleton<UserDataManager>
         for (int i = 0; i < 6; i++)
             userdata.PlayerEquipData.Skillids.Add(0);
     }
-    
     public void SaveUserData()
     {
         Debug.Log("저장호출");
@@ -69,5 +68,9 @@ public class UserDataManager : Singleton<UserDataManager>
                 Debug.Log("에러발생 에러코드:" + task.Exception);
         });
     }
-  
+    public void GetServerTime()
+    {
+        //FirebaseApp.CheckAndFixDependenciesAsync().con
+    }
+
 }

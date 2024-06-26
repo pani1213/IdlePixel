@@ -5,17 +5,23 @@ using UnityEngine.UI;
 public class DamageTextUI : PoolObject
 {
     public Text damageText;
-    public float speed = 5f;
-    public float angle = 45f;
     public float lifetime = 2f;
-
     private float startTime;
     public bool isRed;
+
+    private float speed = 0.5f; // 이동 속도
+    public float randomRange = 1.0f; // 랜덤 방향의 범위
+    private Vector3 direction;
+
     private void Awake()
     {
         if (damageText == null) damageText = GetComponent<Text>();
         transform.parent = BattlePaticleUICanvas.instance.transform;
         transform.localScale = Vector3.one;
+
+        float randomX = UnityEngine.Random.Range(-randomRange, randomRange);
+        float randomZ = UnityEngine.Random.Range(-randomRange, randomRange);
+        direction = new Vector3(randomX, 1.0f, randomZ).normalized;
     }
     private void Update()
     {
@@ -24,11 +30,7 @@ public class DamageTextUI : PoolObject
         {
             ObjectPooler.instance.InsertPoolObject(this);
         }
-    }
-    private float CalculateYOffset(float deltaTime)
-    {
-        float yOffset = speed * Mathf.Sin(angle * Mathf.Deg2Rad) * deltaTime - (Physics2D.gravity.magnitude * 0.5f * deltaTime * deltaTime);
-        return yOffset;
+        transform.position += direction * speed * Time.deltaTime;
     }
     public void textInput(int _damage, bool isRed)
     {

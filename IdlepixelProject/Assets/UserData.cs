@@ -12,6 +12,8 @@ public class UserData
     public StatLevel playerLevelData;
     public StageInfo playerStageInfo;
     public GachaLevel playerGachaData;
+
+
     public bool isSkillAuto = false;
     public void PrintGachaInven()
     {

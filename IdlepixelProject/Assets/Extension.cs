@@ -58,6 +58,7 @@ public static class Extension
 
         char letter = (char)('A' + numCount - 4);
         str = $"{f.ToString("0.00")}{letter}";
+        Debug.Log(str);
         return str;
     }
     public static (int A,int B) GetHalf(this int _num)

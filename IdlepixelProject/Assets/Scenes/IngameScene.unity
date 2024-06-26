@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -809,6 +809,17 @@ MonoBehaviour:
   - {fileID: 1982293089}
   - {fileID: 1262855279}
   - {fileID: 822023066}
+  PriceTexts:
+  - {fileID: 1912625684}
+  - {fileID: 659463334}
+  - {fileID: 1944610446}
+  - {fileID: 1822995719}
+  - {fileID: 769246093}
+  - {fileID: 2074219633}
+  - {fileID: 898291111}
+  - {fileID: 2119864144}
+  - {fileID: 1841224320}
+  - {fileID: 508435020}
   StatImages:
   - {fileID: 1545165048}
   - {fileID: 1420194102}
@@ -1227,7 +1238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1339,7 +1350,7 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 47760419}
           m_TargetAssemblyTypeName: LevelupUI, Assembly-CSharp
-          m_MethodName: ButtonAction_Levelup_DoubleShot
+          m_MethodName: Onclick_DoubleShot
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1584,6 +1595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinText: {fileID: 94466263}
+  coinID: 1001
 --- !u!1 &197033320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,7 +1649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3200,6 +3212,7 @@ GameObject:
   - component: {fileID: 382129041}
   - component: {fileID: 382129043}
   - component: {fileID: 382129042}
+  - component: {fileID: 382129044}
   m_Layer: 5
   m_Name: RubyBackgroundUI
   m_TagString: Untagged
@@ -3267,6 +3280,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382129040}
   m_CullTransparentMesh: 1
+--- !u!114 &382129044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382129040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97112d6188b7da746a691f3d1064d357, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 1323316517}
+  coinID: 1002
 --- !u!1 &384804189
 GameObject:
   m_ObjectHideFlags: 0
@@ -3588,7 +3615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3700,7 +3727,7 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 47760419}
           m_TargetAssemblyTypeName: LevelupUI, Assembly-CSharp
-          m_MethodName: ButtonAction_Levelup_Critical_Power
+          m_MethodName: Onclick_CriticalPower
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4068,7 +4095,7 @@ GameObject:
   - component: {fileID: 508435023}
   - component: {fileID: 508435022}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4126,7 +4153,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &508435021
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4218,7 +4245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -5518,7 +5545,7 @@ GameObject:
   - component: {fileID: 659463337}
   - component: {fileID: 659463336}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5576,7 +5603,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &659463335
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6406,7 +6433,7 @@ GameObject:
   - component: {fileID: 769246096}
   - component: {fileID: 769246095}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6464,7 +6491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &769246094
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6954,7 +6981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -7393,7 +7420,7 @@ GameObject:
   - component: {fileID: 898291114}
   - component: {fileID: 898291113}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7451,7 +7478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &898291112
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9380,7 +9407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -11156,7 +11183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -13011,7 +13038,7 @@ GameObject:
   - component: {fileID: 1822995722}
   - component: {fileID: 1822995721}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13069,7 +13096,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &1822995720
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13274,7 +13301,7 @@ GameObject:
   - component: {fileID: 1841224323}
   - component: {fileID: 1841224322}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13332,7 +13359,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &1841224321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13613,7 +13640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -14301,7 +14328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -14469,7 +14496,7 @@ GameObject:
   - component: {fileID: 1912625687}
   - component: {fileID: 1912625686}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14527,7 +14554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &1912625685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14664,7 +14691,7 @@ GameObject:
   - component: {fileID: 1944610449}
   - component: {fileID: 1944610448}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14722,7 +14749,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &1944610447
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15597,7 +15624,7 @@ GameObject:
   - component: {fileID: 2074219636}
   - component: {fileID: 2074219635}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15655,7 +15682,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &2074219634
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15930,7 +15957,7 @@ GameObject:
   - component: {fileID: 2119864147}
   - component: {fileID: 2119864146}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Price_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15988,7 +16015,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press
+  m_Text: 10.01A
 --- !u!222 &2119864145
 CanvasRenderer:
   m_ObjectHideFlags: 0
