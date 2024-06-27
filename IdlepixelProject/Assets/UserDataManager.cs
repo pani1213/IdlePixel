@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.IO;
 using Firebase.Database;
 using Firebase.Extensions;
 using Firebase;
@@ -15,8 +14,16 @@ public class UserDataManager : Singleton<UserDataManager>
     public void init()
     {
         UserDataInIt();
-        reference = FirebaseDatabase.DefaultInstance.RootReference;
+        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                FirebaseApp app = FirebaseApp.DefaultInstance;
+                reference = FirebaseDatabase.DefaultInstance.RootReference;
+            }
+        });
     }
+
     public void UserDataInIt()
     {
         userdata.playerStageInfo.Chapter = 1;
@@ -68,9 +75,4 @@ public class UserDataManager : Singleton<UserDataManager>
                 Debug.Log("에러발생 에러코드:" + task.Exception);
         });
     }
-    public void GetServerTime()
-    {
-        //FirebaseApp.CheckAndFixDependenciesAsync().con
-    }
-
 }

@@ -124,7 +124,6 @@ public class Player : MonoBehaviour, IDamaged
         {
             power *= criticalPower;
             isCriticalAttack = true;
-            Debug.Log("critical hit! " + power);
         }
         return power;
     }

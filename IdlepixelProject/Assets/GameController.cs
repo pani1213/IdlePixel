@@ -25,6 +25,8 @@ public class GameController : Singleton<GameController>
         LevelupUI.init();
         PetController.instance.init();
         DataContainer.instance.GetGachaItemData();
+        DBTimeManager.instance.init();
+    
     }
     public void NextRound()
     {

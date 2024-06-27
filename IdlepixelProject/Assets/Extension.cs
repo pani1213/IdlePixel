@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -60,6 +62,23 @@ public static class Extension
         str = $"{f.ToString("0.00")}{letter}";
         Debug.Log(str);
         return str;
+    }
+    public static string DateTimeToString(this DateTime _Oregin)
+    {
+        return _Oregin.ToString("yyyy-MM-dd HH:mm:ss");
+    }
+    public static DateTime StringToDateTime(this string _dateString)
+    {
+        DateTime dateTime;
+        if (DateTime.TryParseExact(_dateString, "yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out dateTime))
+        {
+            return dateTime;
+        }
+        else
+        {
+            // 예외 처리: 올바른 형식의 날짜가 아닌 경우 처리
+            throw new ArgumentException("올바른 날짜 형식이 아닙니다.");
+        }
     }
     public static (int A,int B) GetHalf(this int _num)
     {

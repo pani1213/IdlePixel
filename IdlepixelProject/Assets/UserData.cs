@@ -13,6 +13,7 @@ public class UserData
     public StageInfo playerStageInfo;
     public GachaLevel playerGachaData;
 
+    public string LoginTime;
 
     public bool isSkillAuto = false;
     public void PrintGachaInven()
