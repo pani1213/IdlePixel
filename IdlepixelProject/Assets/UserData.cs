@@ -14,7 +14,7 @@ public class UserData
     public GachaLevel playerGachaData;
 
     public string LoginTime;
-
+    public string LogoutTime;
     public bool isSkillAuto = false;
     public void PrintGachaInven()
     {

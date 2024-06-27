@@ -8,7 +8,6 @@ using UnityEngine;
 public class DBTimeManager : Singleton<DBTimeManager>
 {
     private DatabaseReference databaseReference;
-
     public void init()
     {
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
@@ -17,12 +16,6 @@ public class DBTimeManager : Singleton<DBTimeManager>
             {
                 FirebaseApp app = FirebaseApp.DefaultInstance;
                 databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
-
-                StartCoroutine(GetCurrentServerTimeCoroutine(serverTime =>
-                {
-                    UserDataManager.instance.userdata.LoginTime = serverTime.ToString();
-                    Debug.Log($"서버시간 저장 {serverTime}");
-                }));
             }
         });
     }
@@ -79,7 +72,6 @@ public class DBTimeManager : Singleton<DBTimeManager>
             Debug.LogError("Database reference is not initialized.");
         }
     }
-
     public void GetServerTimestamp()
     {
         if (databaseReference != null)
@@ -100,7 +92,6 @@ public class DBTimeManager : Singleton<DBTimeManager>
             });
         }
     }
-   
     private System.DateTime UnixTimeStampToDateTime(long unixTimeStamp)
     {
         System.DateTime dateTime = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);

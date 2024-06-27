@@ -65,6 +65,10 @@ public class UserDataManager : Singleton<UserDataManager>
     public void SaveUserData()
     {
         Debug.Log("저장호출");
+        StartCoroutine(DBTimeManager.instance.GetCurrentServerTimeCoroutine(time =>
+        {
+            userdata.LogoutTime = time.DateTimeToString();
+        }));
         string jsonText = JsonUtility.ToJson(userdata,true);
         string userkey = "users/" + userID;
         reference.Child(userkey).SetRawJsonValueAsync(jsonText).ContinueWithOnMainThread(task =>

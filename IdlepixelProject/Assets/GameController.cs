@@ -26,7 +26,13 @@ public class GameController : Singleton<GameController>
         PetController.instance.init();
         DataContainer.instance.GetGachaItemData();
         DBTimeManager.instance.init();
-    
+
+        Debug.Log("GetCurrentServerTimeCoroutine 코루틴 함수 호출");
+        StartCoroutine(DBTimeManager.instance.GetCurrentServerTimeCoroutine(serverTime =>
+        {
+            UserDataManager.instance.userdata.LoginTime = serverTime.DateTimeToString();
+            Debug.Log($"서버시간 저장 {serverTime}");
+        }));
     }
     public void NextRound()
     {

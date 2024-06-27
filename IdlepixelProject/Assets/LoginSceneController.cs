@@ -1,3 +1,4 @@
+using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
 using GooglePlayGames;
@@ -17,7 +18,6 @@ public class LoginSceneController : MonoBehaviour
         DataContainer.instance.init();
         JsonPasingManager.instance.init();
         UserDataManager.instance.init();
-        reference = FirebaseDatabase.DefaultInstance.RootReference;  // 파이어베이스 접속
 
         FileHandler fileHandler = new FileHandler();
 
@@ -30,7 +30,16 @@ public class LoginSceneController : MonoBehaviour
         if (!isFirest)
         {
             for (int i = 0; i < LogingameBtns.Length; i++) LogingameBtns[i].gameObject.SetActive(false);
-            GetUserData();
+
+            FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
+            {
+                if (task.IsCompleted)
+                {
+                    FirebaseApp app = FirebaseApp.DefaultInstance;
+                    reference = FirebaseDatabase.DefaultInstance.RootReference;
+                    GetUserData();
+                }
+            });
         }
     }
     public void ButtonAction_GuestLogin()
