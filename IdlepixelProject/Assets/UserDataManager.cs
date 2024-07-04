@@ -9,7 +9,6 @@ public class UserDataManager : Singleton<UserDataManager>
     public UserData userdata = new UserData();
     public string userID;
     private int coinID = 1001, JemID = 1002;
-    DatabaseReference reference;
 
     public void init()
     {
@@ -19,7 +18,7 @@ public class UserDataManager : Singleton<UserDataManager>
             if (task.IsCompleted)
             {
                 FirebaseApp app = FirebaseApp.DefaultInstance;
-                reference = FirebaseDatabase.DefaultInstance.RootReference;
+                FirebaseManager.instance.dataReference = FirebaseDatabase.DefaultInstance.RootReference;
             }
         });
     }
@@ -64,19 +63,21 @@ public class UserDataManager : Singleton<UserDataManager>
     }
     public void SaveUserData()
     {
+        string userkey = "users/" + userID;
         Debug.Log("저장호출");
         StartCoroutine(DBTimeManager.instance.GetCurrentServerTimeCoroutine(time =>
         {
             userdata.LogoutTime = time.DateTimeToString();
+            string jsonText = JsonUtility.ToJson(userdata, true);
+
+            FirebaseManager.instance.dataReference.Child(userkey).SetRawJsonValueAsync(jsonText).ContinueWithOnMainThread(task =>
+            {
+                if (task.IsCompleted)
+                    Debug.Log("해당경로에 저장성공");
+                else
+                    Debug.Log("에러발생 에러코드:" + task.Exception);
+            });
         }));
-        string jsonText = JsonUtility.ToJson(userdata,true);
-        string userkey = "users/" + userID;
-        reference.Child(userkey).SetRawJsonValueAsync(jsonText).ContinueWithOnMainThread(task =>
-        {
-            if (task.IsCompleted)
-                Debug.Log("해당경로에 저장성공");
-            else
-                Debug.Log("에러발생 에러코드:" + task.Exception);
-        });
+    
     }
 }

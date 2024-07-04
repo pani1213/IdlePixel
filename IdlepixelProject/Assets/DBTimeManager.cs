@@ -7,19 +7,6 @@ using UnityEngine;
 
 public class DBTimeManager : Singleton<DBTimeManager>
 {
-    private DatabaseReference databaseReference;
-    public void init()
-    {
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
-        {
-            if (task.IsCompleted)
-            {
-                FirebaseApp app = FirebaseApp.DefaultInstance;
-                databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
-            }
-        });
-    }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -27,21 +14,15 @@ public class DBTimeManager : Singleton<DBTimeManager>
             GetServerTimestamp();
         }
     }
-    public void SaveServerTimestamp()
-    {
-        if (databaseReference != null)
-        {
-            DatabaseReference timeRef = databaseReference.Child(UserDataManager.instance.userID).Child("server_time");
-            timeRef.SetValueAsync(ServerValue.Timestamp);
-        }
-    }
+  
     public IEnumerator GetCurrentServerTimeCoroutine(Action<DateTime> callback)
     {
-        if (databaseReference != null)
+        if (FirebaseManager.instance.dataReference != null)
         {
-            DatabaseReference timeRef = databaseReference.Child(UserDataManager.instance.userID).Child("server_time");
+            DatabaseReference timeRef = FirebaseManager.instance.dataReference.Child("server_time");
 
             // 서버 시간 저장
+                
             var saveTask = timeRef.SetValueAsync(ServerValue.Timestamp);
             yield return new WaitUntil(() => saveTask.IsCompleted);
 
@@ -58,25 +39,20 @@ public class DBTimeManager : Singleton<DBTimeManager>
                     callback(serverTime); // 콜백 호출
                 }
                 else
-                {
                     Debug.LogError("Failed to get server time: " + getTask.Exception);
-                }
             }
             else
-            {
                 Debug.LogError("Failed to save server time: " + saveTask.Exception);
-            }
         }
         else
-        {
             Debug.LogError("Database reference is not initialized.");
-        }
+        
     }
     public void GetServerTimestamp()
     {
-        if (databaseReference != null)
+        if (FirebaseManager.instance.dataReference != null)
         {
-            DatabaseReference timeRef = databaseReference.Child(UserDataManager.instance.userID).Child("server_time");
+            DatabaseReference timeRef = FirebaseManager.instance.dataReference.Child("server_time");
             timeRef.GetValueAsync().ContinueWithOnMainThread(task =>
             {
                 if (task.IsCompleted)

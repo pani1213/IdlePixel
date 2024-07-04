@@ -7,11 +7,11 @@ public class SaveManager : Singleton<SaveManager>
     {
         if (pause)
         {
-       UserDataManager.instance.SaveUserData();
+            UserDataManager.instance.SaveUserData();
         }
     }
     private void OnApplicationQuit()
     {
-       UserDataManager.instance.SaveUserData();
+        UserDataManager.instance.SaveUserData();
     }
 }

@@ -7,13 +7,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoginSceneController : MonoBehaviour
+public class LoginSceneController : Singleton<LoginSceneController>
 {
     public Text logText;
-    DatabaseReference reference;
     public GameObject[] LogingameBtns;
     bool isFirest = false;
-    private void Start()
+    public void init()
     {
         DataContainer.instance.init();
         JsonPasingManager.instance.init();
@@ -30,16 +29,7 @@ public class LoginSceneController : MonoBehaviour
         if (!isFirest)
         {
             for (int i = 0; i < LogingameBtns.Length; i++) LogingameBtns[i].gameObject.SetActive(false);
-
-            FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
-            {
-                if (task.IsCompleted)
-                {
-                    FirebaseApp app = FirebaseApp.DefaultInstance;
-                    reference = FirebaseDatabase.DefaultInstance.RootReference;
-                    GetUserData();
-                }
-            });
+            GetUserData();
         }
     }
     public void ButtonAction_GuestLogin()
@@ -48,7 +38,7 @@ public class LoginSceneController : MonoBehaviour
         {
             Debug.Log("첫 로그인 파이어 베이스에 아이디 작성");
             string json = JsonUtility.ToJson(UserDataManager.instance.userdata);
-            reference.Child("users").Child(UserDataManager.instance.userID).SetRawJsonValueAsync(json).ContinueWithOnMainThread(task => { });
+            FirebaseManager.instance.dataReference.Child("users").Child(UserDataManager.instance.userID).SetRawJsonValueAsync(json).ContinueWithOnMainThread(task => { });
 
             SceneManager.LoadSceneAsync(1);
         }
@@ -60,7 +50,7 @@ public class LoginSceneController : MonoBehaviour
     }
     private void GetUserData()
     {
-        reference.Child("users").Child(UserDataManager.instance.userID).GetValueAsync().ContinueWithOnMainThread(task =>
+        FirebaseManager.instance.dataReference.Child("users").Child(UserDataManager.instance.userID).GetValueAsync().ContinueWithOnMainThread(task =>
         {
             if (task.IsFaulted)
             {
@@ -97,10 +87,10 @@ public class LoginSceneController : MonoBehaviour
     {
         if (status == SignInStatus.Success)
         {
-            string name = PlayGamesPlatform.Instance.GetUserDisplayName();
-            string id = PlayGamesPlatform.Instance.GetUserId();
+            //string name = PlayGamesPlatform.Instance.GetUserDisplayName();
+            //string id = PlayGamesPlatform.Instance.GetUserId();
+            //string imgurl = PlayGamesPlatform.Instance.GetUserImageUrl();
             UserDataManager.instance.userID = PlayGamesPlatform.Instance.GetUserId();
-            string imgurl = PlayGamesPlatform.Instance.GetUserImageUrl();
 
             FileHandler fileHandler = new FileHandler();
             fileHandler.SaveToFile("UserID.txt", PlayGamesPlatform.Instance.GetUserId());
