@@ -67,7 +67,8 @@ public class UserDataManager : Singleton<UserDataManager>
         Debug.Log("저장호출");
         StartCoroutine(DBTimeManager.instance.GetCurrentServerTimeCoroutine(time =>
         {
-            userdata.LogoutTime = time.DateTimeToString();
+            if (userdata.LogoutTime == "")
+                userdata.LogoutTime = time.DateTimeToString();
             string jsonText = JsonUtility.ToJson(userdata, true);
 
             FirebaseManager.instance.dataReference.Child(userkey).SetRawJsonValueAsync(jsonText).ContinueWithOnMainThread(task =>
