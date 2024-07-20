@@ -20,6 +20,7 @@ public class RiseFactorManager : Singleton<RiseFactorManager>
         if (userData.HighClassAttackPowerLevel > 1) HighClassATKUp(player, userData);
         if (userData.NomalEnemyAttackPowerLevel > 1) NomalAenemyATKUp(player, userData);
     }
+
     public void ATKIUp(Player player, StatLevel userData) => player.ATK = GetBetweenLevelData(userData.AttackLevel).atkRiseFactor* userData.AttackLevel;
     public void ATKSpeedUp(Player player, StatLevel userData) => player.ATKSpeed = GetBetweenLevelData(userData.AttackSpeedLevel).atkSpeedFactor* userData.AttackSpeedLevel;
     public void HPUp(Player player, StatLevel userData) => player.maxHp = GetBetweenLevelData(userData.HpLevel).hpRiseFactor * userData.HpLevel;

@@ -60,7 +60,7 @@ public static class Extension
 
         char letter = (char)('A' + numCount - 4);
         str = $"{f.ToString("0.00")}{letter}";
-        Debug.Log(str);
+      
         return str;
     }
     public static string DateTimeToString(this DateTime _Oregin)

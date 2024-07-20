@@ -23,7 +23,7 @@ public class MainBottombuttonsUI : MonoBehaviour
             return;
         }
         if (popupState != PopupState.None) CurrentPopup.Close();
-
+        Debug.Log(_popupName);
         CurrentPopup = UIPopupManager.instance.PopupUI(_popupName);
         CurrentPopup.init(SetPopupState);
         popupState = _popupState;
